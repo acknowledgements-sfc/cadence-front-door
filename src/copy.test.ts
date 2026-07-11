@@ -33,7 +33,7 @@ describe("aux page copy", () => {
   });
 
   it("exposes the support email", () => {
-    expect(AUX_COPY.contact.email).toBe("support@cadencemgmt.site");
+    expect(AUX_COPY.contact.email).toBe("yo@rcawhatsgood.com");
   });
 
   it("footer labels cover privacy, terms, contact", () => {

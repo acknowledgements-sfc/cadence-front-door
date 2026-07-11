@@ -8,7 +8,7 @@ export function ContactPage() {
       <p className="aux-page__intro">{c.intro}</p>
       <p className="aux-page__body">{c.body}</p>
       <p className="aux-page__label">{c.emailLabel}</p>
-      {/* STRATEGIST-FLAG: confirm support@cadencemgmt.site + Resend inbox routing. */}
+      {/* Contact email points at a reachable inbox; cadencemgmt.site is outbound-only via Resend. */}
       <a className="aux-page__email" href={`mailto:${c.email}`}>
         {c.email}
       </a>

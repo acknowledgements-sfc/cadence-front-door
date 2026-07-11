@@ -81,8 +81,8 @@ export const AUX_COPY = {
     title: "Contact",
     intro:
       "Email is the support path for early access. There is no live chat and no promised response window beyond what a small team can manage.",
-    // STRATEGIST-FLAG: confirm address + Resend inbox routing.
-    email: "support@cadencemgmt.site",
+    // Reachable inbox until cadencemgmt.site has inbound mail (outbound Resend only today).
+    email: "yo@rcawhatsgood.com",
     emailLabel: "Write to",
     body: "Use this address for account questions, data removal requests, or anything the product cannot answer on its own.",
   },
@@ -145,7 +145,7 @@ export function copyGuardrailCheck(): string[] {
     errors.push('aux: Terms must echo "leave whenever"');
   }
 
-  if (!aux.includes("support@cadencemgmt.site")) {
+  if (!aux.includes(AUX_COPY.contact.email)) {
     errors.push("aux: Contact email missing");
   }
 
