@@ -10,6 +10,20 @@ describe("copy guardrails", () => {
   it("has verbatim beat4 placeholder", () => {
     expect(COPY.beat4.placeholder).toBe("a single, an album, a tour, a year…");
   });
+
+  it("has locked beat headlines and observational rest line", () => {
+    expect(COPY.beat1.headline).toBe("You don't just have releases. You have a career.");
+    expect(COPY.beat2.headline).toBe("When one thing slips, the rest moves with it.");
+    expect(COPY.beat2.restLine).toBe("Settled — the rest moved with it");
+    expect(COPY.beat3.headline).toBe("Not built for one release. Built for the whole way through.");
+    expect(COPY.beat4.question).toBe("What do you want to make real?");
+  });
+
+  it("keeps waitlist success observational (no first-person system voice)", () => {
+    expect(COPY.beat4.success).toBe("You are on the list. We will be in touch.");
+    expect(/\bI\b/.test(COPY.beat4.success)).toBe(false);
+    expect(COPY.beat4.success.includes("!")).toBe(false);
+  });
 });
 
 describe("aux page copy", () => {
@@ -56,5 +70,13 @@ describe("beat2 settle", () => {
     expect(rest.single).toBeGreaterThan(0);
     expect(rest.single).toBeLessThan(rest.tour);
     expect(rest.album).toBe(0);
+  });
+
+  it("leaves album and album push unmoved (gravitational center holds)", () => {
+    const rest = offsetsForPhase("rest");
+    expect(rest.album).toBe(0);
+    expect(rest.albumPush).toBe(0);
+    expect(rest.loop).toBeGreaterThan(0);
+    expect(rest.singlePush).toBeGreaterThan(0);
   });
 });
