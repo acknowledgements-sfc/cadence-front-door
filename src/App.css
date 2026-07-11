@@ -225,3 +225,127 @@
   font-size: var(--body-size);
   color: var(--color-success);
 }
+
+/* — Site footer — */
+.site-footer {
+  margin-top: auto;
+  padding: var(--space-2xl) var(--space-lg);
+  border-top: 1px solid var(--color-studio-border);
+  display: flex;
+  justify-content: center;
+}
+
+.site-footer__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 0.8125rem;
+  color: var(--color-muted-ash);
+}
+
+.site-footer__nav a {
+  color: var(--color-muted-ash);
+  text-decoration: none;
+}
+
+.site-footer__nav a:hover {
+  color: var(--color-parchment);
+  text-decoration: underline;
+}
+
+.site-footer__sep {
+  opacity: 0.5;
+}
+
+/* — Auxiliary pages (Spec C Part 1) — */
+.aux-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl) var(--space-lg) var(--space-3xl);
+  gap: var(--space-xl);
+}
+
+.aux-page__header {
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aux-page__home {
+  font-size: 0.875rem;
+  color: var(--color-muted-ash);
+  text-decoration: none;
+}
+
+.aux-page__home:hover {
+  color: var(--color-parchment);
+}
+
+.aux-page__frame {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: var(--space-2xl);
+  border: 1px solid var(--color-studio-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-sidebar, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.aux-page__title {
+  margin: 0;
+  font-size: var(--headline-size, 1.5rem);
+  font-weight: 600;
+  color: var(--color-parchment);
+  letter-spacing: -0.01em;
+}
+
+.aux-page__intro,
+.aux-page__body {
+  margin: 0;
+  font-size: var(--body-size, 1rem);
+  line-height: 1.55;
+  color: var(--color-muted-ash);
+}
+
+.aux-page__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.aux-page__heading {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-parchment);
+}
+
+.aux-page__label {
+  margin: var(--space-lg) 0 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-muted-ash);
+}
+
+.aux-page__email {
+  font-size: var(--body-size, 1rem);
+  color: var(--color-accent);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.aux-page__email:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 390px) {
+  .aux-page__frame {
+    padding: var(--space-xl);
+  }
+}

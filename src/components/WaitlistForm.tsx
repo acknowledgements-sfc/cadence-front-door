@@ -47,7 +47,7 @@ export function WaitlistForm() {
 
         {status === "success" ? (
           <p className="ask-section__success" role="status">
-            You are on the list. We will be in touch.
+            {COPY.beat4.success}
           </p>
         ) : (
           <form className="ask-section__form" onSubmit={handleSubmit}>
@@ -66,7 +66,7 @@ export function WaitlistForm() {
               required
             />
             <button type="submit" className="ask-section__button" disabled={status === "loading"}>
-              {status === "loading" ? "Sending…" : COPY.beat4.button}
+              {status === "loading" ? COPY.beat4.sending : COPY.beat4.button}
             </button>
             {status === "error" ? (
               <p className="ask-section__error" role="alert">

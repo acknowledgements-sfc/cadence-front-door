@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { COPY, copyGuardrailCheck } from "./copy";
+import { COPY, AUX_COPY, copyGuardrailCheck } from "./copy";
 import { offsetsForPhase, SETTLE_DURATION_MS, SETTLE_STAGGER_MS } from "./animation/beat2Settle";
 
 describe("copy guardrails", () => {
@@ -9,6 +9,39 @@ describe("copy guardrails", () => {
 
   it("has verbatim beat4 placeholder", () => {
     expect(COPY.beat4.placeholder).toBe("a single, an album, a tour, a year…");
+  });
+});
+
+describe("aux page copy", () => {
+  it("echoes leave whenever in terms", () => {
+    const termsBlob = JSON.stringify(AUX_COPY.terms);
+    expect(termsBlob.toLowerCase()).toContain("leave whenever");
+  });
+
+  it("exposes the support email", () => {
+    expect(AUX_COPY.contact.email).toBe("support@cadencemgmt.site");
+  });
+
+  it("footer labels cover privacy, terms, contact", () => {
+    expect(AUX_COPY.footer.privacy).toBe("Privacy");
+    expect(AUX_COPY.footer.terms).toBe("Terms");
+    expect(AUX_COPY.footer.contact).toBe("Contact");
+  });
+
+  it("has no forbidden words in aux copy", () => {
+    const all = JSON.stringify(AUX_COPY).toLowerCase();
+    for (const word of [
+      "release planner",
+      "project",
+      "dashboard",
+      "timeline",
+      "notification",
+      "alert",
+      "deadline",
+      "instinct",
+    ]) {
+      expect(all).not.toContain(word);
+    }
   });
 });
 
