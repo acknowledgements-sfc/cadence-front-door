@@ -226,6 +226,47 @@
   color: var(--color-success);
 }
 
+.ask-section__success-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.ask-section__button--link {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+/* — Site header — */
+.site-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-md) var(--space-lg);
+}
+
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 0.8125rem;
+  color: var(--color-muted-ash);
+}
+
+.site-header__nav a {
+  color: var(--color-muted-ash);
+  text-decoration: none;
+}
+
+.site-header__nav a:hover {
+  color: var(--color-parchment);
+  text-decoration: underline;
+}
+
+.site-header__sep {
+  opacity: 0.5;
+}
+
 /* — Site footer — */
 .site-footer {
   margin-top: auto;

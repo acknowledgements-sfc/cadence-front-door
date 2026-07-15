@@ -36,10 +36,18 @@ describe("aux page copy", () => {
     expect(AUX_COPY.contact.email).toBe("yo@rcawhatsgood.com");
   });
 
-  it("footer labels cover privacy, terms, contact", () => {
+  it("footer labels cover app entry points plus privacy, terms, contact", () => {
+    expect(AUX_COPY.footer.signIn).toBe("Sign in");
+    expect(AUX_COPY.footer.start).toBe("Start");
     expect(AUX_COPY.footer.privacy).toBe("Privacy");
     expect(AUX_COPY.footer.terms).toBe("Terms");
     expect(AUX_COPY.footer.contact).toBe("Contact");
+  });
+
+  it("points Sign in and Start at the production app", async () => {
+    const { APP_URLS } = await import("./copy");
+    expect(APP_URLS.signIn).toBe("https://app.cadencemgmt.site/");
+    expect(APP_URLS.start).toBe("https://app.cadencemgmt.site/start");
   });
 
   it("has no forbidden words in aux copy", () => {

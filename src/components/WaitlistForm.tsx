@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { COPY } from "../copy";
+import { APP_URLS, COPY } from "../copy";
 import { submitWaitlist } from "../lib/waitlistSubmit";
 
 export function WaitlistForm() {
@@ -46,9 +46,12 @@ export function WaitlistForm() {
         </h2>
 
         {status === "success" ? (
-          <p className="ask-section__success" role="status">
-            {COPY.beat4.success}
-          </p>
+          <div className="ask-section__success-stack" role="status">
+            <p className="ask-section__success">{COPY.beat4.success}</p>
+            <a className="ask-section__button ask-section__button--link" href={APP_URLS.start}>
+              {COPY.beat4.successCta}
+            </a>
+          </div>
         ) : (
           <form className="ask-section__form" onSubmit={handleSubmit}>
             <label htmlFor="waitlist-answer" className="sr-only">

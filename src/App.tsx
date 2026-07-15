@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HeroSection } from "./components/HeroSection";
 import { WaitlistForm } from "./components/WaitlistForm";
+import { SiteHeader } from "./components/SiteHeader";
 import { Footer } from "./components/Footer";
 import { PrivacyPage } from "./components/PrivacyPage";
 import { TermsPage } from "./components/TermsPage";
@@ -26,6 +27,7 @@ export function App() {
   return (
     <BrowserRouter>
       <div className="app">
+        <SiteHeader />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy" element={<PrivacyPage />} />

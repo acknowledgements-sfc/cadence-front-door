@@ -3,6 +3,11 @@
  * plus Spec C Part 1 auxiliary page copy (translated-outward register).
  */
 
+export const APP_URLS = {
+  signIn: "https://app.cadencemgmt.site/",
+  start: "https://app.cadencemgmt.site/start",
+} as const;
+
 export const COPY = {
   beat1: {
     headline: "You don't just have releases. You have a career.",
@@ -23,6 +28,7 @@ export const COPY = {
     button: "Join the waitlist",
     undertext: "Early access for independent artists. No spam, leave whenever.",
     success: "You are on the list. We will be in touch.",
+    successCta: "Start in Cadence",
     sending: "Sending…",
   },
 } as const;
@@ -34,10 +40,16 @@ export const COPY = {
  */
 export const AUX_COPY = {
   footer: {
+    signIn: "Sign in",
+    start: "Start",
     privacy: "Privacy",
     terms: "Terms",
     contact: "Contact",
     home: "Cadence",
+  },
+  header: {
+    signIn: "Sign in",
+    start: "Start",
   },
   privacy: {
     title: "Privacy",
