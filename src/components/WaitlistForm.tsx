@@ -4,21 +4,23 @@ import { submitWaitlist } from "../lib/waitlistSubmit";
 
 export function WaitlistForm() {
   const [answer, setAnswer] = useState("");
+  const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     const trimmed = answer.trim();
-    if (!trimmed) return;
+    if (!trimmed || !email.trim()) return;
 
     setStatus("loading");
     setErrorMsg("");
 
-    const result = await submitWaitlist(trimmed);
+    const result = await submitWaitlist(trimmed, email);
     if (result.ok) {
       setStatus("success");
       setAnswer("");
+      setEmail("");
     } else {
       setStatus("error");
       setErrorMsg(result.error);
@@ -65,6 +67,20 @@ export function WaitlistForm() {
               onChange={(e) => setAnswer(e.target.value)}
               rows={3}
               maxLength={2000}
+              disabled={status === "loading"}
+              required
+            />
+            <label htmlFor="waitlist-email" className="sr-only">
+              {COPY.beat4.emailLabel}
+            </label>
+            <input
+              id="waitlist-email"
+              className="ask-section__input"
+              type="email"
+              autoComplete="email"
+              placeholder={COPY.beat4.emailPlaceholder}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               disabled={status === "loading"}
               required
             />

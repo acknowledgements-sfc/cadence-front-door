@@ -25,6 +25,8 @@ export const COPY = {
   beat4: {
     question: "What do you want to make real?",
     placeholder: "a single, an album, a tour, a year…",
+    emailLabel: "Email",
+    emailPlaceholder: "you@email.com",
     button: "Join the waitlist",
     undertext: "Early access for independent artists. No spam, leave whenever.",
     success: "You are on the list. We will be in touch.",
@@ -58,7 +60,7 @@ export const AUX_COPY = {
     sections: [
       {
         heading: "What is stored",
-        body: "Waitlist submissions include the answer text you write and, when you share it, an email address. Inside the product, plan data for your pursuits and movements is stored so the map can hold your work. Product analytics use PostHog events without attaching personal identifiers to those events.",
+        body: "Waitlist submissions include the answer text you write and the email address you share so Cadence can invite you. Inside the product, plan data for your pursuits and movements is stored so the map can hold your work. Product analytics use PostHog events without attaching personal identifiers to those events.",
       },
       {
         heading: "Email",
