@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import { PrivacyPage } from "./components/PrivacyPage";
 import { TermsPage } from "./components/TermsPage";
 import { ContactPage } from "./components/ContactPage";
+import { ProductPage } from "./components/ProductPage";
 import { copyGuardrailCheck } from "./copy";
 import "./App.css";
 
@@ -30,6 +31,7 @@ export function App() {
         <SiteHeader />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/product" element={<ProductPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/contact" element={<ContactPage />} />

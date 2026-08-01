@@ -26,6 +26,38 @@ describe("copy guardrails", () => {
   });
 });
 
+describe("product page copy", () => {
+  it("exposes nav link and chapter strings under COPY.product", () => {
+    expect(COPY.product.navLink).toBe("See how it works");
+    expect(COPY.product.p0.headline).toBe("The whole way through");
+    expect(COPY.product.p1.sub).toBe("The year stays whole — later, not louder.");
+    expect(COPY.product.p1.watchAgain).toBe("Watch again");
+    expect(COPY.product.p2.headline).toBe("One canvas. Four altitudes.");
+  });
+
+  it("ships FD-2 tab labels and one-line jobs", () => {
+    expect(COPY.product.p2.tabs.map.label).toBe("Map");
+    expect(COPY.product.p2.tabs.map.job).toBe("Which pursuits need me?");
+    expect(COPY.product.p2.tabs.line.label).toBe("The Line");
+    expect(COPY.product.p2.tabs.line.job).toBe(
+      "Which parts of this pursuit are behind?",
+    );
+    expect(COPY.product.p2.tabs.detail.label).toBe("Detail");
+    expect(COPY.product.p2.tabs.detail.job).toBe(
+      "What is blocking, and what is at risk?",
+    );
+    expect(COPY.product.p2.tabs.task.label).toBe("Task");
+    expect(COPY.product.p2.tabs.task.job).toBe(
+      "One unit of work, without losing the rest.",
+    );
+  });
+
+  it("reuses beat2 headline for P-1 (stance sub is separate)", () => {
+    expect(COPY.beat2.headline).toBe("When one thing slips, the rest moves with it.");
+    expect(COPY.product.p1.sub).not.toContain("settles");
+  });
+});
+
 describe("aux page copy", () => {
   it("echoes leave whenever in terms", () => {
     const termsBlob = JSON.stringify(AUX_COPY.terms);

@@ -17,6 +17,8 @@ export interface PursuitLayout {
   throughLine?: boolean;
   /** Beat 0 close-up target */
   focusTarget?: boolean;
+  /** Optional live-multi tick fractions along the span (0–1). */
+  ticks?: number[];
 }
 
 export const VIEW_WIDTH = 1000;

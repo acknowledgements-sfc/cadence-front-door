@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { PursuitId, SettleTempo } from "../animation/beat2Settle";
 import {
   GATES,
@@ -6,8 +7,8 @@ import {
   VIEW_HEIGHT,
   VIEW_WIDTH,
   anchorX,
-  pursuitById,
   rowY,
+  type GateLink,
   type PursuitLayout,
   type PursuitShape,
 } from "../layout/stillLifeLayout";
@@ -20,10 +21,22 @@ interface StillLifeCanvasProps {
   restLine: string;
   viewport: { x: number; y: number; w: number; h: number } | null;
   settling: boolean;
+  /** Override cast (product held-anchor). Defaults to homepage PURSUITS. */
+  pursuits?: PursuitLayout[];
+  /** Override gate topology. Defaults to homepage GATES. */
+  gates?: GateLink[];
+  /** Quiet hover: shape name only — never a metric. */
+  showHoverShapeLabels?: boolean;
+  /** Gate thread opacity (poised tension on product page). */
+  gateOpacity?: number;
 }
 
 function healthColor(health: PursuitLayout["health"]): string {
   return health === "ok" ? "var(--map-health-ok)" : "var(--map-health-tight)";
+}
+
+function shapeLabel(shape: PursuitShape): string {
+  return SHAPE_LEGEND.find((s) => s.shape === shape)?.label ?? shape;
 }
 
 function ReleaseLine({ p, y }: { p: PursuitLayout; y: number }) {
@@ -58,7 +71,7 @@ function VisibilityLine({ p, y }: { p: PursuitLayout; y: number }) {
 }
 
 function LiveMultiLine({ p, y }: { p: PursuitLayout; y: number }) {
-  const ticks = [0.2, 0.45, 0.7, 0.9];
+  const ticks = p.ticks ?? [0.2, 0.45, 0.7, 0.9];
   const span = p.xEnd - p.xStart;
   return (
     <>
@@ -122,19 +135,30 @@ function PursuitShape({ p, y }: { p: PursuitLayout; y: number }) {
   }
 }
 
-/** Quiet gate threads — endpoints include settle offsets so topology tracks the slip. */
 function GateThreads({
   offsets,
   dimmed,
+  gates,
+  pursuits,
+  gateOpacity,
 }: {
   offsets: Record<PursuitId, number>;
   dimmed: boolean;
+  gates: GateLink[];
+  pursuits: PursuitLayout[];
+  gateOpacity: number;
 }) {
+  const byId = (id: PursuitLayout["id"]) => {
+    const found = pursuits.find((p) => p.id === id);
+    if (!found) throw new Error(`Unknown pursuit: ${id}`);
+    return found;
+  };
+
   return (
-    <g className="gate-threads" opacity={dimmed ? 0.28 : 0.45}>
-      {GATES.map((gate) => {
-        const from = pursuitById(gate.from);
-        const to = pursuitById(gate.to);
+    <g className="gate-threads" opacity={dimmed ? Math.min(gateOpacity, 0.28) : gateOpacity}>
+      {gates.map((gate) => {
+        const from = byId(gate.from);
+        const to = byId(gate.to);
         const x1 = anchorX(from, gate.fromAnchor) + (offsets[from.id] ?? 0);
         const y1 = rowY(from.row);
         const x2 = anchorX(to, gate.toAnchor) + (offsets[to.id] ?? 0);
@@ -229,15 +253,30 @@ function ShapeLegend() {
   );
 }
 
+const ZERO_OFFSETS: Record<PursuitId, number> = {
+  album: 0,
+  albumPush: 0,
+  tour: 0,
+  loop: 0,
+  single: 0,
+  singlePush: 0,
+};
+
 export function StillLifeCanvas({
-  offsets,
+  offsets = ZERO_OFFSETS,
   tempo,
   dimmed,
   showRestLine,
   restLine,
   viewport,
   settling,
+  pursuits = PURSUITS,
+  gates = GATES,
+  showHoverShapeLabels = false,
+  gateOpacity = 0.45,
 }: StillLifeCanvasProps) {
+  const [hoveredId, setHoveredId] = useState<PursuitId | null>(null);
+
   const transition = settling
     ? `transform ${tempo.durationMs}ms var(--settle-ease)`
     : "transform 900ms var(--ezoom)";
@@ -255,11 +294,18 @@ export function StillLifeCanvas({
     >
       <rect x={0} y={0} width={VIEW_WIDTH} height={VIEW_HEIGHT} fill="var(--map-bg)" />
 
-      <GateThreads offsets={offsets} dimmed={dimmed} />
+      <GateThreads
+        offsets={offsets}
+        dimmed={dimmed}
+        gates={gates}
+        pursuits={pursuits}
+        gateOpacity={gateOpacity}
+      />
 
-      {PURSUITS.map((p) => {
+      {pursuits.map((p) => {
         const y = rowY(p.row);
         const ox = offsets[p.id] ?? 0;
+        const hovering = showHoverShapeLabels && hoveredId === p.id;
         return (
           <g
             key={p.id}
@@ -268,7 +314,23 @@ export function StillLifeCanvas({
               transform: `translateX(${ox}px)`,
               transition,
             }}
+            onMouseEnter={
+              showHoverShapeLabels ? () => setHoveredId(p.id) : undefined
+            }
+            onMouseLeave={
+              showHoverShapeLabels ? () => setHoveredId(null) : undefined
+            }
           >
+            {/* Invisible hit area for hover */}
+            {showHoverShapeLabels ? (
+              <rect
+                x={p.xStart - 8}
+                y={y - 22}
+                width={p.xEnd - p.xStart + 16}
+                height={36}
+                fill="transparent"
+              />
+            ) : null}
             <PursuitShape p={p} y={y} />
             <text
               x={p.xStart}
@@ -283,6 +345,18 @@ export function StillLifeCanvas({
               </tspan>
               {p.name}
             </text>
+            {hovering ? (
+              <text
+                x={p.xStart}
+                y={y + 22}
+                fill="var(--map-dim)"
+                fontSize={9}
+                fontWeight={500}
+                letterSpacing="0.03em"
+              >
+                {shapeLabel(p.shape)}
+              </text>
+            ) : null}
           </g>
         );
       })}

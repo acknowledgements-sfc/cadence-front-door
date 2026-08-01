@@ -33,6 +33,39 @@ export const COPY = {
     successCta: "Start in Cadence",
     sending: "Sending…",
   },
+  product: {
+    navLink: "See how it works",
+    p0: {
+      headline: "The whole way through",
+      sub: "What a year of work looks like when it lives in one place — singles, the album, the tour, and the ideas still forming.",
+    },
+    p1: {
+      sub: "The year stays whole — later, not louder.",
+      watchAgain: "Watch again",
+    },
+    p2: {
+      headline: "One canvas. Four altitudes.",
+      sub: "Zoom out for posture, zoom in for the one thing in front of you.",
+      tabs: {
+        map: {
+          label: "Map",
+          job: "Which pursuits need me?",
+        },
+        line: {
+          label: "The Line",
+          job: "Which parts of this pursuit are behind?",
+        },
+        detail: {
+          label: "Detail",
+          job: "What is blocking, and what is at risk?",
+        },
+        task: {
+          label: "Task",
+          job: "One unit of work, without losing the rest.",
+        },
+      },
+    },
+  },
 } as const;
 
 /**

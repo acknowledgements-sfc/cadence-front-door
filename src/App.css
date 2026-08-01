@@ -390,3 +390,389 @@
     padding: var(--space-xl);
   }
 }
+
+/* — /product long-scroll demo — */
+.product-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-chapter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding: var(--space-3xl) var(--space-lg);
+  border-top: 1px solid var(--color-studio-border);
+}
+
+.product-chapter:first-child {
+  border-top: none;
+  padding-top: var(--space-xl);
+}
+
+.product-chapter__copy {
+  max-width: 42ch;
+}
+
+.product-chapter__headline {
+  margin: 0 0 var(--space-md);
+  font-size: var(--display-size);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-parchment);
+}
+
+.product-chapter__sub {
+  margin: 0;
+  font-size: var(--body-size);
+  line-height: 1.6;
+  color: var(--color-muted-ash);
+  max-width: 65ch;
+}
+
+.product-chapter__canvas {
+  min-height: 320px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-studio-border);
+  background: var(--map-bg);
+}
+
+.product-chapter__canvas--compact {
+  min-height: 240px;
+}
+
+.product-p1__reduced {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 900px) {
+  .product-p1__reduced {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .product-p1__frame {
+    flex: 1 1 50%;
+  }
+}
+
+.product-p1__frame-label {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted-ash);
+}
+
+.product-p1__replay {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-p1__watch-again {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 0.8125rem;
+  color: var(--color-muted-ash);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.product-p1__watch-again:hover,
+.product-p1__watch-again:focus-visible {
+  color: var(--color-accent);
+  outline: none;
+}
+
+/* P-2 four altitudes */
+.product-p2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 900px) {
+  .product-p2 {
+    flex-direction: row;
+    align-items: stretch;
+    gap: var(--space-2xl);
+  }
+}
+
+.product-p2__tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 900px) {
+  .product-p2__tabs {
+    flex: 0 0 220px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+  }
+}
+
+.product-p2__tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin: 0;
+  padding: 12px 14px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-muted-ash);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s var(--ezoom), background 0.2s var(--ezoom);
+}
+
+.product-p2__tab--active {
+  color: var(--color-parchment);
+  background: var(--color-lifted-surface);
+}
+
+.product-p2__tab:hover {
+  color: var(--color-parchment);
+}
+
+.product-p2__tab:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.product-p2__tab-label {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.product-p2__tab-job {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--color-muted-ash);
+  font-weight: 400;
+}
+
+.product-p2__stage {
+  flex: 1 1 auto;
+  min-height: 360px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-studio-border);
+  background: var(--map-bg);
+}
+
+.product-p2__stage--static {
+  min-height: 280px;
+}
+
+.product-p2__panel {
+  height: 100%;
+  min-height: 360px;
+}
+
+.product-p2__stacked {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.product-p2__stacked-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.product-p2__stacked-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-p2__stacked-header .product-p2__tab-label {
+  color: var(--color-parchment);
+}
+
+/* Altitude mock frames */
+.altitude-mock {
+  padding: var(--space-xl);
+  height: 100%;
+  min-height: 320px;
+  box-sizing: border-box;
+}
+
+.altitude-mock__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+.altitude-mock__eyebrow {
+  margin: 0 0 var(--space-lg);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted-ash);
+}
+
+.altitude-mock__title {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-parchment);
+  letter-spacing: -0.01em;
+}
+
+.altitude-mock__meta {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-muted-ash);
+}
+
+.altitude-line {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: relative;
+  padding-left: var(--space-lg);
+}
+
+.altitude-line__spine {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--color-studio-border);
+}
+
+.altitude-line__stop {
+  display: grid;
+  grid-template-columns: 16px 1fr auto;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.altitude-line__stop--focus .altitude-line__name {
+  color: var(--color-parchment);
+  font-weight: 600;
+}
+
+.altitude-line__pip {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--map-health-ok);
+  z-index: 1;
+}
+
+.altitude-line__pip--tight {
+  background: var(--map-health-tight);
+}
+
+.altitude-line__pip--ok {
+  background: var(--map-health-ok);
+}
+
+.altitude-line__name {
+  font-size: 0.9375rem;
+  color: var(--color-parchment);
+}
+
+.altitude-line__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.altitude-line__handled {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-muted-ash);
+}
+
+.altitude-line__date {
+  font-size: 0.75rem;
+  color: var(--color-muted-ash);
+}
+
+.altitude-detail__block {
+  margin-top: var(--space-lg);
+}
+
+.altitude-detail__label {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-muted-ash);
+}
+
+.altitude-detail__body {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--color-parchment);
+}
+
+.altitude-task__main {
+  margin-bottom: var(--space-xl);
+}
+
+.altitude-task__status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--color-studio-border);
+  border-radius: var(--radius-md);
+  background: var(--color-sidebar);
+}
+
+.altitude-task__status-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-muted-ash);
+}
+
+.altitude-task__status-value {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-parchment);
+}
+
+.altitude-task__dep {
+  padding: var(--space-lg);
+  border: 1px solid var(--color-studio-border);
+  border-radius: var(--radius-md);
+  background: var(--color-sidebar);
+}
+
+.altitude-task__dep-name {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-parchment);
+}
