@@ -1,0 +1,4 @@
+/* Cadence promo — motion is frame-driven in React; do not add CSS transitions. */
+body {
+  margin: 0;
+}

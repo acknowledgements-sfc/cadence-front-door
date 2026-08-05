@@ -24,3 +24,14 @@ Migration `held-migrations/0011_waitlist.sql` is **held** for Claude to apply on
 ## Design tokens
 
 Copied values from the app repo are documented in `COPIED-FROM-APP.md`.
+
+## Promo video (Remotion)
+
+Exportable social/ads MP4 lives in `remotion-promo/` — complementary to the interactive `/product` cascade, not a replacement.
+
+```bash
+npm run promo:dev
+npm run promo:render
+```
+
+See `remotion-promo/EVAL.md` for the capture evaluation and dual-path decision.

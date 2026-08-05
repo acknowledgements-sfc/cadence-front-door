@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "test": "vitest run",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "promo:dev": "npm run dev --prefix remotion-promo",
+    "promo:render": "npm exec --prefix remotion-promo -- remotion render CadencePromo out/cadence-promo.mp4"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.109.0",
