@@ -6,6 +6,7 @@
 export const APP_URLS = {
   signIn: "https://app.cadencemgmt.site/",
   start: "https://app.cadencemgmt.site/start",
+  docs: "https://cadencemgmt.site/docs",
 } as const;
 
 export const COPY = {
@@ -77,6 +78,7 @@ export const AUX_COPY = {
   footer: {
     signIn: "Sign in",
     start: "Start",
+    docs: "Docs",
     privacy: "Privacy",
     terms: "Terms",
     contact: "Contact",

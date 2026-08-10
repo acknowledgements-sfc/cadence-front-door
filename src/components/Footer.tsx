@@ -13,6 +13,10 @@ export function Footer() {
         <span className="site-footer__sep" aria-hidden="true">
           ·
         </span>
+        <a href={APP_URLS.docs}>{AUX_COPY.footer.docs}</a>
+        <span className="site-footer__sep" aria-hidden="true">
+          ·
+        </span>
         <Link to="/privacy">{AUX_COPY.footer.privacy}</Link>
         <span className="site-footer__sep" aria-hidden="true">
           ·
