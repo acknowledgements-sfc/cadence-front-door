@@ -45,6 +45,7 @@
       "successBody": "Nothing has been saved and you have not joined a list. Thanks for exploring the draft.",
       "again": "Try the form again",
       "liveDisclosure": "Submitting adds your email and answer to the Cadence waitlist so we can consider early access and contact you about Cadence. See our",
+      "liveSubmit": "Join the waitlist",
       "liveIdea": "What do you want to make real?",
       "required": "Required",
       "answerRequired": "Add a short answer about what you want to make real.",
