@@ -1,0 +1,540 @@
+{
+  "common": {
+    "nav": [
+      [
+        "Features",
+        "/features"
+      ],
+      [
+        "Pricing",
+        "/pricing"
+      ],
+      [
+        "Demo",
+        "/demo"
+      ],
+      [
+        "About / Vision",
+        "/about"
+      ]
+    ],
+    "primary": "Request beta access",
+    "secondary": "See the demo",
+    "draft": "Review draft",
+    "footer": {
+      "headline": "Start with what matters to you.",
+      "body": "A question, a new idea, work already underway or a direction you want to explore. Cadence is being shaped to meet you there.",
+      "note": "Cadence is being built for independent artists. This is a local review draft."
+    },
+    "betaCta": {
+      "label": "EARLY ACCESS",
+      "title": "Bring what matters to you.",
+      "body": "You do not need a finished plan to request beta access. Share what feels useful now, whether it is a question, an idea or work already underway."
+    },
+    "form": {
+      "title": "Request beta access",
+      "email": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "idea": "What are you working toward?",
+      "optional": "Optional",
+      "ideaPlaceholder": "A question, an idea, work underway, a direction…",
+      "disclosure": "This local review form does not send or save your information. Enter sample details to preview the flow; nothing will be submitted.",
+      "submit": "Preview request",
+      "invalid": "Enter a valid email address.",
+      "success": "Preview complete. Your request has not been sent.",
+      "successBody": "Nothing has been saved and you have not joined a list. Thanks for exploring the draft.",
+      "again": "Try the form again",
+      "liveDisclosure": "Submitting adds your email and answer to the Cadence waitlist so we can consider early access and contact you about Cadence. See our",
+      "liveIdea": "What do you want to make real?",
+      "required": "Required",
+      "answerRequired": "Add a short answer about what you want to make real.",
+      "submitError": "We could not add you to the waitlist just now. Please try again.",
+      "sending": "Joining…",
+      "liveSuccess": "You are on the list. We will be in touch.",
+      "liveSuccessBody": "Thanks for sharing what you want to make real. You can leave the waitlist at any time."
+    },
+    "walkthrough": {
+      "label": "Illustrative product walkthrough",
+      "sample": "Fictional sample work · Approved desktop design states",
+      "previous": "Previous view",
+      "next": "Next view",
+      "restart": "Back to the Map",
+      "steps": [
+        {
+          "name": "Map",
+          "title": "Start with the bigger picture.",
+          "body": "See a single, an album and a tour in one wider view. The artist can look across different pursuits before choosing where to focus.",
+          "image": "map",
+          "alt": "Approved Cadence desktop Map showing fictional music pursuits and their relationships."
+        },
+        {
+          "name": "Line",
+          "title": "Follow one pursuit.",
+          "body": "Open the fictional Midnight Drive pursuit. Its Line brings the Movements into view while keeping the wider context close.",
+          "image": "line",
+          "alt": "Approved Cadence Line view focused on the fictional Midnight Drive pursuit."
+        },
+        {
+          "name": "Detail",
+          "title": "Understand the work inside a Movement.",
+          "body": "Open Pre-Production in Detail. See the work within this Movement and consider what to do next.",
+          "image": "detail",
+          "alt": "Approved Cadence Detail view of the fictional Pre-Production Movement."
+        },
+        {
+          "name": "Task",
+          "title": "Focus on one clear action.",
+          "body": "Songwriting brings a specific Task into view. Move close to the work while keeping its place in the pursuit.",
+          "image": "task",
+          "alt": "Approved Cadence Songwriting Task view within the fictional Midnight Drive pursuit."
+        }
+      ]
+    },
+    "ui": {
+      "home": "Home",
+      "mapView": "MAP VIEW ↗",
+      "productBar": "CADENCE / THE BIGGER PICTURE",
+      "imageCaption": "Approved desktop design · Fictional sample work",
+      "faqLabel": "QUESTIONS YOU MAY HAVE",
+      "faqTitle": "A few things to know.",
+      "betaAbout": "About beta access",
+      "offerNote": "Beta pricing is being finalized.",
+      "walkthroughText": "Read the complete walkthrough",
+      "draftYear": "Review draft / 2026",
+      "betaContextLabel": "WHAT TO EXPECT",
+      "betaContextTitle": "Begin with what you know.",
+      "betaContextBody": "The preview lets you see how a beta request could feel. Pricing, included capabilities and access arrangements are still being finalized.",
+      "betaLiveContextBody": "Share a little about what you want to make real. Beta pricing is being finalized; access details will be clear before you make any commitment.",
+      "betaRead": "Read about beta access",
+      "betaNoteLabel": "FOR THIS REVIEW",
+      "betaNote": "This form is local only. It does not send or save your information.",
+      "formLabel": "A FIRST STEP, IF YOU WANT ONE",
+      "footerLabel": "CADENCE / START WHERE YOU ARE",
+      "skip": "Skip to content",
+      "notFoundLabel": "CADENCE / 404",
+      "notFoundTitle": "Let’s find your way back.",
+      "notFoundBody": "That page isn’t part of this review draft.",
+      "notFoundLink": "Back to Home"
+    }
+  },
+  "pages": {
+    "home": {
+      "path": "/",
+      "title": "Cadence — Start with what’s on your mind",
+      "description": "Begin with a question, an unfinished idea or work already underway. Explore how Cadence can help independent artists see context and choose a next step.",
+      "eyebrow": "FOR INDEPENDENT ARTISTS",
+      "headline": "Start with what’s\non your mind.",
+      "intro": "A question, an unfinished idea, a burst of excitement, or work already underway. Begin with what’s real for you. Cadence helps you see the wider picture and choose what feels useful next.",
+      "heroVisual": true,
+      "sections": [
+        {
+          "label": "A PLACE TO BEGIN",
+          "title": "There is no one right starting point.",
+          "body": "You might arrive with a doubt, an instinct, a small win, a question or something you cannot quite name yet. You do not need a finished plan to begin.",
+          "kind": "statement"
+        },
+        {
+          "label": "WAYS TO BEGIN",
+          "title": "Talk it through, or start with what you know.",
+          "body": "Cadence is shaped to understand, clarify, offer a possible next step and leave room for you to review. You can begin in conversation or go directly to work already underway.",
+          "kind": "cards",
+          "cards": [
+            {
+              "title": "Put it into your own words.",
+              "body": "The Voice Doorway is an exploratory demo for talking through an intention and reviewing what takes shape."
+            },
+            {
+              "title": "Start with work in motion.",
+              "body": "The product design moves from Map to Line to Detail to Task, keeping the wider context in reach."
+            },
+            {
+              "title": "Leave room for a possibility.",
+              "body": "Exploration is a direction for ideas still forming. Its inclusion in the beta is not yet confirmed."
+            }
+          ],
+          "link": {
+            "label": "Explore the Voice Doorway",
+            "href": "/demo#voice-doorway"
+          }
+        },
+        {
+          "label": "A CLOSER LOOK",
+          "title": "From the wider view to one useful next step.",
+          "body": "Follow one fictional artist’s work from the whole picture to a specific Task.",
+          "kind": "walkthrough"
+        },
+        {
+          "label": "WHAT CLARITY CAN OFFER",
+          "title": "A clearer view, at your pace.",
+          "body": "Understand what is in front of you, choose where to focus and keep the connected work in view.",
+          "kind": "cards",
+          "cards": [
+            {
+              "title": "See how work connects.",
+              "body": "Bring different pursuits into the same wider view without making them all the same kind of work."
+            },
+            {
+              "title": "Choose a focus.",
+              "body": "Move from Map to Line to Detail to Task, then return to the wider context when you want it."
+            },
+            {
+              "title": "Respond with context.",
+              "body": "See what a change may affect. Decisions about connected commitments remain yours."
+            }
+          ]
+        },
+        {
+          "label": "WHY CADENCE",
+          "title": "Support for the career you choose.",
+          "body": "Cadence is being shaped to meet your work where it is and help you move toward what matters to you—with context, room to explore and the final choice in your hands.",
+          "kind": "vision",
+          "link": {
+            "label": "About the vision",
+            "href": "/about"
+          }
+        },
+        {
+          "label": "EARLY ACCESS",
+          "title": "Bring what matters to you.",
+          "body": "Whether you have a question, an idea in progress or a direction you want to explore, you can review the approach and request beta access when it feels right.",
+          "kind": "beta"
+        }
+      ],
+      "faqs": [
+        [
+          "Do I need to have a clear plan before I start?",
+          "No. Cadence is being shaped to meet you with a question, an unfinished idea, work already underway or a direction you want to explore. You choose where to begin."
+        ],
+        [
+          "What is the Voice Doorway?",
+          "It is an exploratory interactive demo that shows a conversation becoming a reviewable plan. It uses fictional starting data; microphone and session availability are required. See the Demo page for details."
+        ],
+        [
+          "What can I see now?",
+          "The site includes a manually controlled walkthrough of approved desktop design states and a link to the separate Voice Doorway demo. Sample work is fictional; neither demo operates your Cadence account."
+        ],
+        [
+          "Can I request beta access here?",
+          "Yes. Share your email and a short note about what you want to make real. A request expresses interest; it does not guarantee a place or commit you to payment."
+        ],
+        [
+          "What will the beta cost?",
+          "Beta pricing is being finalized. The Pricing page explains what is known and what is still open."
+        ]
+      ]
+    },
+    "features": {
+      "path": "/features",
+      "title": "Features — Find a way forward with Cadence",
+      "description": "Explore how Cadence meets artists through conversation or existing work, then moves from Map to Line to Detail to Task.",
+      "eyebrow": "WAYS INTO THE WORK",
+      "headline": "Begin where you are.\nMove toward what matters.",
+      "intro": "Start with a conversation or with a pursuit already underway. Cadence is designed to help you understand the context, find a useful focus and choose how to continue.",
+      "heroVisual": true,
+      "sections": [
+        {
+          "label": "BEGIN WHERE YOU ARE",
+          "title": "Bring a conversation or existing work.",
+          "body": "The Voice Doorway is an exploratory way to talk through an intention. If you already know the work, begin with a pursuit and choose where to focus.",
+          "kind": "cards",
+          "cards": [
+            {
+              "title": "Talk it through.",
+              "body": "Explore an intention in the Voice Doorway, then review and correct the plan it proposes."
+            },
+            {
+              "title": "Start with what you know.",
+              "body": "Begin from a pursuit already underway and move through the work at your pace."
+            }
+          ],
+          "link": {
+            "label": "Explore the Voice Doorway",
+            "href": "/demo#voice-doorway"
+          }
+        },
+        {
+          "label": "01 / MAP",
+          "title": "See the pursuits in your wider view.",
+          "body": "Map brings different pursuits into one view. A release, a live show and a collaboration can sit in the same bigger picture while each remains its own kind of work.",
+          "kind": "feature",
+          "image": "map",
+          "aside": "A Pursuit is something you are working to make real."
+        },
+        {
+          "label": "02 / LINE",
+          "title": "Follow one pursuit at your own pace.",
+          "body": "Open a pursuit to see its Line. Movements group meaningful parts of that pursuit and help you decide where to focus.",
+          "kind": "feature",
+          "image": "line",
+          "aside": "A Movement groups a meaningful part of a Pursuit."
+        },
+        {
+          "label": "03 / DETAIL",
+          "title": "See the work inside a Movement.",
+          "body": "Detail brings the Tasks within a Movement into view. Look at their context before choosing what to do.",
+          "kind": "feature",
+          "image": "detail",
+          "aside": "Context stays available as you move closer."
+        },
+        {
+          "label": "04 / TASK",
+          "title": "Bring one Task into focus.",
+          "body": "A Task is a specific piece of work within a Movement. Focus on it, then return to the Line or Map whenever you want more context.",
+          "kind": "feature",
+          "image": "task",
+          "aside": "Map → Line → Detail → Task"
+        },
+        {
+          "label": "WHEN THINGS CHANGE",
+          "title": "See what changes. Choose what follows.",
+          "body": "When something moves, understand the possible effect on connected work. Cadence does not automatically change every connected commitment; the choices remain yours.",
+          "kind": "statement"
+        },
+        {
+          "label": "EXPLORATION",
+          "title": "An idea can stay open while it takes shape.",
+          "body": "Exploration is a place in the product direction for ideas before you decide what, if anything, to commit. Its inclusion in the beta is still being confirmed.",
+          "kind": "vision"
+        }
+      ],
+      "faqs": [
+        [
+          "Is the walkthrough a live account?",
+          "No. The product visuals come from approved design states and use fictional work. They illustrate the intended structure, not every capability that will be in the beta."
+        ],
+        [
+          "Does Cadence make decisions for me?",
+          "The product direction keeps commitment choices with the artist. A change in one pursuit should not silently rewrite every connected commitment."
+        ],
+        [
+          "Can I start with an idea that is still forming?",
+          "Yes. The Voice Doorway is an exploratory demo for talking through an intention. The Map walkthrough shows how existing pursuits are organized."
+        ],
+        [
+          "Can a team use Cadence?",
+          "The initial audience is independent artists. Team access, roles and collaboration arrangements are not confirmed."
+        ]
+      ]
+    },
+    "pricing": {
+      "path": "/pricing",
+      "title": "Pricing & beta access — Cadence",
+      "description": "See what is known about the Cadence beta invitation, participation and pricing. Beta pricing is being finalized; requesting access does not collect payment.",
+      "eyebrow": "BETA ACCESS & PRICING",
+      "headline": "Know what you’re\nbeing invited into.",
+      "intro": "You deserve clear details before deciding whether to join. Here is what we know, what is still being finalized and what we will explain before asking for a commitment.",
+      "heroVisual": false,
+      "sections": [
+        {
+          "label": "THE BETA",
+          "title": "Beta pricing is being finalized.",
+          "body": "Included capabilities and access arrangements are also being confirmed. We will explain the offer before asking anyone to join.",
+          "kind": "offer",
+          "cards": [
+            {
+              "title": "Express interest.",
+              "body": "A request expresses interest. It does not create an account, guarantee a place or commit you to payment."
+            },
+            {
+              "title": "Review the details.",
+              "body": "You will be able to review price, included capabilities and participation details before deciding."
+            }
+          ]
+        },
+        {
+          "label": "THE EXPERIENCE",
+          "title": "A beta shaped around your work.",
+          "body": "The experience is still being defined. We will confirm its included capabilities, support and participation details before access opens.",
+          "kind": "cards",
+          "cards": [
+            {
+              "title": "See your wider view.",
+              "body": "The intended product brings the pursuits you choose to carry into context."
+            },
+            {
+              "title": "Move toward a focus.",
+              "body": "The design follows Map → Line → Detail → Task."
+            },
+            {
+              "title": "Continue at your pace.",
+              "body": "The product direction keeps room to step back, explore and choose what comes next."
+            }
+          ]
+        },
+        {
+          "label": "TAKING PART",
+          "title": "Clear expectations come first.",
+          "body": "Before access opens, we will explain how feedback works, what support is available and what may change. Requesting access does not sign you up for research or create a participation commitment.",
+          "kind": "statement"
+        },
+        {
+          "label": "AFTER THE BETA",
+          "title": "Future terms will be clear.",
+          "body": "Post-beta plans, pricing and transition terms are not confirmed. We will make them clear before asking you to make a future commitment.",
+          "kind": "vision"
+        }
+      ],
+      "faqs": [
+        [
+          "Is beta access free?",
+          "No price or free-access offer is confirmed here. Beta pricing is being finalized."
+        ],
+        [
+          "Do I need a payment card?",
+          "This request does not collect payment details. Any requirements for the beta will be explained before access opens."
+        ],
+        [
+          "Does requesting access guarantee a place?",
+          "No. The request preview does not establish selection, timing or capacity. Those arrangements are still being finalized."
+        ],
+        [
+          "Will I be charged after the beta?",
+          "There is no confirmed billing arrangement or post-beta price. Future terms must be explained before any payment commitment."
+        ]
+      ]
+    },
+    "demo": {
+      "path": "/demo",
+      "title": "See the demo — Cadence",
+      "description": "Move through approved fictional Map, Line, Detail and Task states, then explore the separate Voice Doorway demo.",
+      "eyebrow": "SEE CADENCE IN CONTEXT",
+      "headline": "Start with what matters.\nFind a way forward.",
+      "intro": "Explore a fictional artist’s work across an album, a single and a tour. Move from Map to one pursuit, one Movement and a Task.",
+      "heroVisual": false,
+      "heroAnchors": [
+        [
+          "Explore the visual walkthrough",
+          "#walkthrough"
+        ],
+        [
+          "Explore the Voice Doorway",
+          "#voice-doorway"
+        ]
+      ],
+      "sections": [
+        {
+          "id": "walkthrough",
+          "label": "THE WALKTHROUGH",
+          "title": "See the whole.\nThen choose a focus.",
+          "body": "Move through approved desktop design states at your own pace. The sample work is fictional; this walkthrough does not operate or save a live account.",
+          "kind": "walkthrough"
+        },
+        {
+          "label": "WHAT YOU JUST SAW",
+          "title": "A wider view.\nA closer next step.",
+          "body": "The Map, Line, Detail and Task bring work into focus one level at a time, while its place in the wider pursuit stays clear.",
+          "kind": "cards",
+          "cards": [
+            {
+              "title": "Begin with the Map.",
+              "body": "See the pursuits in this fictional artist’s wider view."
+            },
+            {
+              "title": "Follow a Line.",
+              "body": "Explore the fictional Midnight Drive pursuit and its Movements."
+            },
+            {
+              "title": "Focus on a Task.",
+              "body": "See one specific task with its context still in reach."
+            }
+          ]
+        },
+        {
+          "id": "voice-doorway",
+          "label": "VOICE DOORWAY / EXPLORATORY INTERACTIVE DEMO",
+          "title": "Begin in your own words.",
+          "body": "Talk through an intention, review what takes shape, and choose what to add. The proposed movements and tasks can be corrected before approval. Only additions the artist approves reach the demo Map.",
+          "kind": "voice-doorway",
+          "cards": [
+            {
+              "title": "Talk it through.",
+              "body": "Share an intention or idea taking shape. You can also begin directly with work you already understand."
+            },
+            {
+              "title": "Review what takes shape.",
+              "body": "Review and correct the proposed Movements and Tasks before deciding."
+            },
+            {
+              "title": "Choose what to add.",
+              "body": "Only artist-approved additions reach the demo Map. An uncertain idea can remain an Exploration."
+            }
+          ],
+          "aside": "Fictional starting data. Microphone access is needed to begin; sessions may be unavailable. Approved additions stay in this demo’s browser session and reset with the sample. They do not reach a real artist workspace.",
+          "link": {
+            "label": "Explore the Voice Doorway",
+            "href": "https://app.cadencemgmt.site/demo/doorway",
+            "external": true
+          }
+        }
+      ],
+      "faqs": []
+    },
+    "about": {
+      "path": "/about",
+      "title": "About & vision — Cadence",
+      "description": "The belief behind Cadence: meet independent artists where they are, offer useful context and leave room for their choices.",
+      "eyebrow": "THE BELIEF BEHIND CADENCE",
+      "headline": "Meet the work\nwhere it is.",
+      "intro": "A music career includes finished plans, half-formed ideas, work underway and everything that happens alongside it. A useful tool should make room for all of it.",
+      "heroVisual": false,
+      "sections": [
+        {
+          "label": "THE OBSERVATION",
+          "title": "Artists begin in different places.",
+          "body": "One person may arrive with a question, another with a burst of motivation or a pursuit already in motion. Curiosity, uncertainty and clarity can all be part of the same creative life.",
+          "kind": "statement"
+        },
+        {
+          "label": "OUR PRINCIPLES",
+          "title": "Support that leaves the choices yours.",
+          "body": "Cadence should offer context and possible ways forward while leaving room to explore, correct the picture and decide what happens next.",
+          "kind": "cards",
+          "cards": [
+            {
+              "title": "Hold the wider view.",
+              "body": "See how different pursuits relate without flattening them into the same kind of work."
+            },
+            {
+              "title": "Focus when you choose.",
+              "body": "Move close to one part of the work, then step back whenever you need perspective."
+            },
+            {
+              "title": "Leave commitments with you.",
+              "body": "Make connected choices visible. Keep the decision with the artist."
+            }
+          ]
+        },
+        {
+          "label": "BEHIND THE WORK",
+          "title": "A practice of listening first.",
+          "body": "Cadence is being developed by Rob Martin. The product direction starts with a simple question: how can software offer useful structure while respecting an artist’s attention and agency?",
+          "kind": "founder"
+        },
+        {
+          "label": "THE LONGER VIEW",
+          "title": "More context. More room to choose.",
+          "body": "The longer-term vision is a connected instrument that can meet artists across the changing shape of their work. This is a future direction, not a capability claim about the beta.",
+          "kind": "vision"
+        },
+        {
+          "label": "BUILD WITH US",
+          "title": "Help shape what this can become.",
+          "body": "Cadence is being built for independent artists. Explore the current design and request beta access if the direction feels useful to you.",
+          "kind": "beta"
+        }
+      ],
+      "faqs": []
+    },
+    "beta": {
+      "path": "/beta",
+      "title": "Request beta access — Cadence",
+      "description": "Request Cadence beta access with an email address and a short note about what you want to make real.",
+      "eyebrow": "REQUEST BETA ACCESS",
+      "headline": "Start wherever\nyou are.",
+      "intro": "An unfinished idea, work already underway, a direction you are curious about—or simply a question. You do not need a finished goal to request beta access.",
+      "heroVisual": false,
+      "sections": [],
+      "faqs": []
+    }
+  }
+}
