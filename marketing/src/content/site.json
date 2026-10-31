@@ -44,15 +44,15 @@
       "success": "Preview complete. Your request has not been sent.",
       "successBody": "Nothing has been saved and you have not joined a list. Thanks for exploring the draft.",
       "again": "Try the form again",
-      "liveDisclosure": "Submitting adds your email and answer to the Cadence waitlist so we can consider early access and contact you about Cadence. See our",
+      "liveDisclosure": "Submitting adds your email and answer to the Cadence waitlist for consideration for invite-based beta access. A request does not guarantee an invitation. See our",
       "liveSubmit": "Join the waitlist",
       "liveIdea": "What do you want to make real?",
       "required": "Required",
       "answerRequired": "Add a short answer about what you want to make real.",
       "submitError": "We could not add you to the waitlist just now. Please try again.",
       "sending": "Joining…",
-      "liveSuccess": "You are on the list. We will be in touch.",
-      "liveSuccessBody": "Thanks for sharing what you want to make real. You can leave the waitlist at any time."
+      "liveSuccess": "Your request is on the list.",
+      "liveSuccessBody": "Thanks for sharing what you want to make real. We will contact you if an invitation becomes available. You can leave the waitlist at any time."
     },
     "walkthrough": {
       "label": "Illustrative product walkthrough",
@@ -99,13 +99,13 @@
       "faqLabel": "QUESTIONS YOU MAY HAVE",
       "faqTitle": "A few things to know.",
       "betaAbout": "About beta access",
-      "offerNote": "Beta pricing is being finalized.",
+      "offerNote": "Free for invited beta participants.",
       "walkthroughText": "Read the complete walkthrough",
       "draftYear": "Review draft / 2026",
       "betaContextLabel": "WHAT TO EXPECT",
       "betaContextTitle": "Begin with what you know.",
-      "betaContextBody": "The preview lets you see how a beta request could feel. Pricing, included capabilities and access arrangements are still being finalized.",
-      "betaLiveContextBody": "Share a little about what you want to make real. Beta pricing is being finalized; access details will be clear before you make any commitment.",
+      "betaContextBody": "The initial beta will be free for invited artists. Invitations will be offered in small waves, and the invitation will explain included features and known limitations before you decide.",
+      "betaLiveContextBody": "The initial beta is free for invited artists, with invitations offered in small waves as onboarding capacity allows. A request does not guarantee a place. We will share available features and known limitations before you decide whether to accept.",
       "betaRead": "Read about beta access",
       "betaNoteLabel": "FOR THIS REVIEW",
       "betaNote": "This form is local only. It does not send or save your information.",
@@ -220,7 +220,7 @@
         ],
         [
           "What will the beta cost?",
-          "Beta pricing is being finalized. The Pricing page explains what is known and what is still open."
+          "The initial beta is free for invited artists. Invitations will be offered in small waves as onboarding capacity allows; a request does not guarantee a place. See Pricing for details."
         ]
       ]
     },
@@ -320,77 +320,77 @@
     "pricing": {
       "path": "/pricing",
       "title": "Pricing & beta access — Cadence",
-      "description": "See what is known about the Cadence beta invitation, participation and pricing. Beta pricing is being finalized; requesting access does not collect payment.",
+      "description": "Learn about Cadence’s free initial beta for invited artists, how invitations work and what to expect before joining.",
       "eyebrow": "BETA ACCESS & PRICING",
-      "headline": "Know what you’re\nbeing invited into.",
-      "intro": "You deserve clear details before deciding whether to join. Here is what we know, what is still being finalized and what we will explain before asking for a commitment.",
+      "headline": "A free first beta.\nYour choice at every step.",
+      "intro": "The initial Cadence beta will be free for invited artists. Invitations will go out in small waves as onboarding capacity allows. Review what is included before you decide whether to join.",
       "heroVisual": false,
       "sections": [
         {
           "label": "THE BETA",
-          "title": "Beta pricing is being finalized.",
-          "body": "Included capabilities and access arrangements are also being confirmed. We will explain the offer before asking anyone to join.",
+          "title": "Free for invited artists.",
+          "body": "The initial beta is free, with no card or payment details. Access is by invitation in small waves; a request does not guarantee a place.",
           "kind": "offer",
           "cards": [
             {
-              "title": "Express interest.",
-              "body": "A request expresses interest. It does not create an account, guarantee a place or commit you to payment."
+              "title": "No cost during the beta.",
+              "body": "Invited artists can use the initial beta for free. No payment details are needed."
             },
             {
-              "title": "Review the details.",
-              "body": "You will be able to review price, included capabilities and participation details before deciding."
+              "title": "Invitations in small waves.",
+              "body": "We will invite artists as onboarding capacity allows. A request does not guarantee a place."
             }
           ]
         },
         {
-          "label": "THE EXPERIENCE",
-          "title": "A beta shaped around your work.",
-          "body": "The experience is still being defined. We will confirm its included capabilities, support and participation details before access opens.",
+          "label": "ACCESS",
+          "title": "Know what is included first.",
+          "body": "Review the available beta features, known limitations and support route before you decide whether to accept an invitation. The approved product screenshots on this site illustrate design states; they do not guarantee every pictured feature will be in the beta.",
           "kind": "cards",
           "cards": [
             {
-              "title": "See your wider view.",
-              "body": "The intended product brings the pursuits you choose to carry into context."
+              "title": "Available features.",
+              "body": "Each invitation will list the beta features you can use."
             },
             {
-              "title": "Move toward a focus.",
-              "body": "The design follows Map → Line → Detail → Task."
+              "title": "Known limitations.",
+              "body": "We will explain what is still changing or not included."
             },
             {
-              "title": "Continue at your pace.",
-              "body": "The product direction keeps room to step back, explore and choose what comes next."
+              "title": "Email support.",
+              "body": "The Contact page is the support route; response times are not promised."
             }
           ]
         },
         {
-          "label": "TAKING PART",
-          "title": "Clear expectations come first.",
-          "body": "Before access opens, we will explain how feedback works, what support is available and what may change. Requesting access does not sign you up for research or create a participation commitment.",
+          "label": "YOUR PARTICIPATION",
+          "title": "Feedback is welcome, not required.",
+          "body": "Use Cadence for your own work. Sharing feedback is optional, and any research sessions will be offered as separate, optional invitations.",
           "kind": "statement"
         },
         {
           "label": "AFTER THE BETA",
-          "title": "Future terms will be clear.",
-          "body": "Post-beta plans, pricing and transition terms are not confirmed. We will make them clear before asking you to make a future commitment.",
+          "title": "Any future plan will be your choice.",
+          "body": "Beta access will not automatically convert to a paid plan or trigger a charge. If Cadence introduces a paid plan later, we will share the price and terms first. You choose whether to sign up; no future price or date is set.",
           "kind": "vision"
         }
       ],
       "faqs": [
         [
-          "Is beta access free?",
-          "No price or free-access offer is confirmed here. Beta pricing is being finalized."
+          "How much does the beta cost?",
+          "The initial beta is free for invited artists. No payment card or payment details are needed."
         ],
         [
-          "Do I need a payment card?",
-          "This request does not collect payment details. Any requirements for the beta will be explained before access opens."
+          "What will be included in the beta?",
+          "The site’s product visuals show approved design states, not a promise that every pictured capability is included. Each invitation will list the available features and known limitations before you decide."
         ],
         [
-          "Does requesting access guarantee a place?",
-          "No. The request preview does not establish selection, timing or capacity. Those arrangements are still being finalized."
+          "Does requesting access guarantee an invitation?",
+          "No. We will offer invitations in small waves as onboarding capacity allows. A request does not reserve a place."
         ],
         [
           "Will I be charged after the beta?",
-          "There is no confirmed billing arrangement or post-beta price. Future terms must be explained before any payment commitment."
+          "No. Beta access will not automatically become a paid plan or trigger a charge. If Cadence offers a paid plan later, you will see the price and terms first and can choose whether to sign up. No future price or date is set."
         ]
       ]
     },
@@ -529,7 +529,7 @@
     "beta": {
       "path": "/beta",
       "title": "Request beta access — Cadence",
-      "description": "Request Cadence beta access with an email address and a short note about what you want to make real.",
+      "description": "Request an invitation to Cadence’s free initial beta. Invitations are limited and a request does not guarantee access.",
       "eyebrow": "REQUEST BETA ACCESS",
       "headline": "Start wherever\nyou are.",
       "intro": "An unfinished idea, work already underway, a direction you are curious about—or simply a question. You do not need a finished goal to request beta access.",
