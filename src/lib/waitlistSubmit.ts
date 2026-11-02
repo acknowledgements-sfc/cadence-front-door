@@ -17,6 +17,15 @@ export async function submitWaitlist(
   answerText: string,
   email: string,
 ): Promise<WaitlistResult> {
+  // Fail closed unless Production explicitly enables the waitlist.
+  // Vercel Preview builds cannot submit, even if Supabase variables are present.
+  if (import.meta.env.VITE_WAITLIST_ENABLED !== "true") {
+    return {
+      ok: false,
+      error: "Waitlist is not open yet — check back soon.",
+    };
+  }
+
   const supabase = getSupabase();
   if (!supabase) {
     return {

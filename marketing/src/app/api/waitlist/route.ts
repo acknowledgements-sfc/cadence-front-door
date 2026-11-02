@@ -1,7 +1,7 @@
 const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(request:Request){
-  if(process.env.VERCEL_ENV!=='production')return Response.json({ok:false,error:'Waitlist submissions are disabled in review previews.'},{status:404});
+  if(process.env.VERCEL_ENV!=='production'||process.env.VITE_WAITLIST_ENABLED!=='true')return Response.json({ok:false,error:'Waitlist submissions are disabled in review previews.'},{status:404});
   let body:{email?:unknown;answerText?:unknown};
   try{body=await request.json() as typeof body;}catch{return Response.json({ok:false,error:'Enter a valid email and a short answer.'},{status:400});}
   const email=typeof body.email==='string'?body.email.trim().toLowerCase():'';
