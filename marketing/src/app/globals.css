@@ -389,6 +389,8 @@ textarea:focus-visible, [tabindex='-1']:focus-visible {
   .navigation a { padding: 12px 5px; border-bottom: 1px solid var(--line); font-size: 14px; }
   .navigation a:last-child { border: 0; }
   .hero { margin: 0 10px; padding: 44px 24px 24px; border-radius: 18px; }
+  /* The fixed mobile header ends at 54px; keep the hero eyebrow clear below it. */
+  .hero.hero-with-visual { padding-top: 80px; }
   .hero .eyebrow { margin-bottom: 24px; font-size: 9px; }
   .hero h1 { font-size: clamp(45px, 9.5vw, 70px); letter-spacing: -.04em; text-wrap: pretty; }
   .hero-bottom { margin-top: 26px; }
